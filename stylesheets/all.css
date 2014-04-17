@@ -1,55 +1,62 @@
-@charset "utf-8";
-
+@charset "UTF-8";
+/* line 3, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
 body {
   background: #d4d4d4 url("../images/background.png");
   text-align: center;
   font-family: sans-serif; }
 
+/* line 9, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
 h1 {
-  color: rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, 0.3);
   font-weight: bold;
   font-size: 32px;
   letter-spacing: -1px;
   text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   padding: 350px 0 10px;
   margin: 0; }
 
+/* line 20, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
 .doc {
   font-size: 14px;
   margin: 0; }
-  .doc:before,
-  .doc:after {
+  /* line 23, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+  .doc:before, .doc:after {
     opacity: .2;
     padding: 6px;
     font-style: normal;
     position: relative;
     content: "•"; }
+  /* line 30, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
   .doc a {
     color: rgba(0, 0, 0, 0.3); }
+    /* line 32, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
     .doc a:hover {
       color: #666; }
 
+/* line 38, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
 .welcome {
   margin-top: 30px;
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s; }
 
 @-webkit-keyframes welcome {
+  /* line 45, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
   from {
     -webkit-transform: scale(0);
-    opacity: 0;
-  }
+    opacity: 0; }
+
+  /* line 49, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
   50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
+    -webkit-transform: scale(0);
+    opacity: 0; }
+
+  /* line 53, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
   82.5% {
     -webkit-transform: scale(1.03);
     -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
+    opacity: 1; }
+
+  /* line 58, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
   to {
-    -webkit-transform: scale(1);
-  }
-}
+    -webkit-transform: scale(1); } }
