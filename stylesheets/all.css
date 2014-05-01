@@ -1,62 +1,174 @@
-@charset "UTF-8";
-/* line 3, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
-body {
-  background: #d4d4d4 url("../images/background.png");
-  text-align: center;
-  font-family: sans-serif; }
+/* line 6, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+.clickable {
+  cursor: pointer; }
 
-/* line 9, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
-h1 {
-  color: rgba(0, 0, 0, 0.3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  padding: 350px 0 10px;
-  margin: 0; }
-
-/* line 20, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
-.doc {
-  font-size: 14px;
-  margin: 0; }
-  /* line 23, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
-  .doc:before, .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  /* line 30, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    /* line 32, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
-    .doc a:hover {
-      color: #666; }
-
-/* line 38, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
-.welcome {
-  margin-top: 30px;
+/* line 10, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+img.animation {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s; }
 
+@media (min-width: 765px) {
+  /* line 16, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+  .welcome {
+    padding-top: 100px; }
+    /* line 18, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+    .welcome .description {
+      padding-top: 100px; } }
+/* line 25, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+.welcome {
+  padding-bottom: 200px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #fff;
+  color: #48525b; }
+  /* line 32, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+  .welcome img {
+    padding-top: 10px;
+    width: 100%;
+    text-align: center; }
+  /* line 38, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+  .welcome .description {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 18px; }
+    /* line 43, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+    .welcome .description h1 {
+      font-size: 46px;
+      font-weight: 400; }
+
+/* line 53, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+.access h2,
+.timetable h2,
+.members h2 {
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 0.100em;
+  font-color: #49535b; }
+
+/* line 62, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+.access {
+  padding: 50px 0 130px;
+  background-color: #92989d;
+  color: #5e676e; }
+  /* line 67, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+  .access .information {
+    font-size: 20px; }
+  /* line 71, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+  .access .map {
+    position: relative; }
+    /* line 74, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+    .access .map .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 300px; }
+
+/* line 84, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+.timetable {
+  padding-top: 50px;
+  padding-bottom: 170px; }
+  /* line 88, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+  .timetable .table {
+    max-width: 600px;
+    margin: 0 auto; }
+
+/* line 94, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+.members {
+  padding-top: 50px;
+  padding-bottom: 170px;
+  background-color: #49535b;
+  color: #fff; }
+  /* line 100, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+  .members .inner {
+    position: relative; }
+    /* line 103, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+    .members .inner h2 {
+      font-color: white; }
+    /* line 107, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+    .members .inner ul {
+      padding-left: 0;
+      list-style: none; }
+      /* line 111, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+      .members .inner ul li.member {
+        text-align: center;
+        margin-bottom: 40px; }
+        /* line 115, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+        .members .inner ul li.member img {
+          width: 250px;
+          border-radius: 50%; }
+    /* line 122, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+    .members .inner .panel {
+      position: absolute;
+      width: 900px;
+      height: 400px;
+      margin-left: 110px;
+      border-radius: 0;
+      border: none;
+      z-index: 100;
+      box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.5);
+      color: #49535b; }
+      /* line 133, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+      .members .inner .panel .close {
+        position: absolute;
+        top: -50px;
+        right: 0; }
+        /* line 138, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+        .members .inner .panel .close i {
+          font-size: 50px;
+          color: #000; }
+      /* line 144, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+      .members .inner .panel .icon {
+        float: left; }
+        /* line 147, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+        .members .inner .panel .icon img {
+          width: 400px; }
+      /* line 152, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+      .members .inner .panel .profile {
+        padding-top: 30px;
+        margin-left: 430px;
+        min-height: 340px; }
+      /* line 158, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+      .members .inner .panel .services {
+        text-align: right;
+        margin-right: 20px; }
+        /* line 162, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+        .members .inner .panel .services .service {
+          margin-right: 10px; }
+
+/* line 170, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+.footer {
+  padding-top: 150px;
+  padding-bottom: 40px; }
+  /* line 174, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+  .footer .links {
+    border-bottom: 1px solid #49535b; }
+    /* line 177, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+    .footer .links span {
+      padding: 0 20px;
+      border-left: 1px solid #49535b; }
+      /* line 181, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+      .footer .links span a {
+        color: #49535b; }
+
 @-webkit-keyframes welcome {
-  /* line 45, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+  /* line 189, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
   from {
     -webkit-transform: scale(0);
     opacity: 0; }
 
-  /* line 49, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+  /* line 193, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
   50% {
     -webkit-transform: scale(0);
     opacity: 0; }
 
-  /* line 53, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+  /* line 197, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
   82.5% {
     -webkit-transform: scale(1.03);
     -webkit-animation-timing-function: ease-out;
     opacity: 1; }
 
-  /* line 58, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
+  /* line 202, /Users/asonas/dev/web/bu.in/source/stylesheets/all.scss */
   to {
     -webkit-transform: scale(1); } }
